@@ -1,0 +1,53 @@
+/* Add these styles for the enhanced dialog */
+.dialog-content {
+  max-width: 90vw;
+  width: 600px;
+}
+
+.dialog-content .grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.dialog-content .rounded-lg {
+  transition: all 0.2s ease-in-out;
+}
+
+.dialog-content .rounded-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Ensure chart tooltips are visible */
+.recharts-tooltip-wrapper {
+  z-index: 50;
+}
+
+/* Improve chart interactivity */
+.recharts-wrapper {
+  cursor: pointer;
+}
+
+.recharts-sector,
+.recharts-bar-rectangle,
+.recharts-line,
+.recharts-area {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.recharts-sector:hover,
+.recharts-bar-rectangle:hover,
+.recharts-line:hover,
+.recharts-area:hover {
+  opacity: 0.8;
+}
+
+.recharts-bar-rectangle {
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.recharts-bar-rectangle:hover {
+  opacity: 0.8;
+}
+
